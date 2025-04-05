@@ -44,16 +44,16 @@ A fun and interactive memory-based game built using **HTML, CSS, and JavaScript*
 
 ### 🔹 Welcome Screen
 
-![Game Start](WelcomeScreen.png)
+![Game Start](WelcomeScreen.jpg)
 
 ---
 
 ### 🔹 Game in Progress
 
-![Gameplay](Game.png)
+![Gameplay](Game.jpg)
 
 ---
 
 ### 🔹 Game Over Screen
 
-![Game Over](GameOver.png)
+![Game Over](GameOver.jpg)
