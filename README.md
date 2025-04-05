@@ -1,6 +1,6 @@
 # 🎮 Simon Says Game
 
-A fun and interactive memory-based game built using **HTML, CSS, and JavaScript**. This project was created as part of my learning journey in DOM manipulation through the Delta Full-Stack Development course.
+A fun and interactive memory-based game built using **HTML, CSS, and JavaScript**.
 
 ---
 
