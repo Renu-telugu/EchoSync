@@ -4,12 +4,6 @@ A fun and interactive memory-based game built using **HTML, CSS, and JavaScript*
 
 ---
 
-## 🖼️ Screenshot
-
-![Simon Says Game Screenshot](screenshot.png)
-
----
-
 ## 🧠 How to Play
 
 - Press any key to start the game.
@@ -43,3 +37,23 @@ A fun and interactive memory-based game built using **HTML, CSS, and JavaScript*
 - Array manipulation and comparison
 - Adding and removing CSS classes dynamically
 - Handling game state and user input flow
+
+---
+
+## 🖼️ Screenshots
+
+### 🔹 Welcome Screen
+
+![Game Start](WelcomeScreen.png)
+
+---
+
+### 🔹 Game in Progress
+
+![Gameplay](Game.png)
+
+---
+
+### 🔹 Game Over Screen
+
+![Game Over](GameOver.png)
