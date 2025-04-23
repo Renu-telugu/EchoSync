@@ -26,6 +26,9 @@ const restartButton = document.getElementById("restart-button");
 const levelTitle = document.getElementById("level-title");
 const bestScoreElements = document.querySelectorAll("#best-score, #best-score-final");
 const finalScoreElement = document.getElementById("final-score");
+const helpButton = document.getElementById("help-button");
+const helpModal = document.getElementById("help-modal");
+const closeHelpButton = document.getElementById("close-help");
 
 // Initialize best score from localStorage if available
 if (localStorage.getItem("simonBestScore")) {
@@ -36,6 +39,8 @@ if (localStorage.getItem("simonBestScore")) {
 // Event Listeners
 startButton.addEventListener("click", startGame);
 restartButton.addEventListener("click", resetAndStartGame);
+helpButton.addEventListener("click", showHelp);
+closeHelpButton.addEventListener("click", hideHelp);
 
 // Setup button event listeners
 let allBtns = document.querySelectorAll(".btn");
@@ -124,8 +129,16 @@ function userFlash(btn) {
 
 // Play sound for a button
 function playSound(color) {
-    sounds[color].currentTime = 0;
-    sounds[color].play();
+    try {
+        sounds[color].currentTime = 0;
+        sounds[color].play().catch(err => {
+            console.log("Error playing sound:", err);
+            // Game continues even if sound fails
+        });
+    } catch (err) {
+        console.log("Sound error:", err);
+        // Game continues even if sound system fails
+    }
 }
 
 // Check the user sequence against the game sequence
@@ -198,6 +211,29 @@ function reset() {
     userSeq = [];
     level = 0;
 }
+
+// Help modal functions
+function showHelp() {
+    helpModal.classList.add("visible");
+    // Pause the game if it's running
+    if (started) {
+        started = false;
+        setTimeout(() => {
+            started = true;
+        }, 500); // Small delay to prevent accidental clicks
+    }
+}
+
+function hideHelp() {
+    helpModal.classList.remove("visible");
+}
+
+// Additional event listener to close modal when clicking outside
+helpModal.addEventListener("click", function(event) {
+    if (event.target === helpModal) {
+        hideHelp();
+    }
+});
 
 // Initial setup - show welcome screen
 showScreen("welcome-screen");

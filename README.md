@@ -2,7 +2,7 @@
 
 A modern implementation of the classic Simon Says memory game with a beautiful UI and smooth animations.
 
-![Simon Says Game](Game.jpg)
+![Simon Says Game]
 
 ## Features
 
