@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon says game</title>
+    <title>Simon Says</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Simon says game</h1>
-    <h2>Press any key to start</h2>
-    <div class="btn-container">
-        <div class="line-1">
-            <div class="btn red" type="button" id="red"></div>
-            <div class="btn yellow" type="button" id="yellow"></div>
+    <div class="game-container">
+        <div id="welcome-screen" class="screen active">
+            <h1>SIMON SAYS</h1>
+            <p>Test your memory with this classic game</p>
+            <button id="start-button">START GAME</button>
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <p>Watch the sequence of colors and repeat it correctly to advance to the next level.</p>
+            </div>
         </div>
-        <div class="line-2">
-            <div class="btn green" type="button" id="green"></div>
-            <div class="btn purple" type="button" id="purple"></div>
+        
+        <div id="game-screen" class="screen">
+            <header>
+                <h1>SIMON SAYS</h1>
+                <div class="score-display">
+                    <h2 id="level-title">Level 1</h2>
+                    <div class="best-score">Best: <span id="best-score">0</span></div>
+                </div>
+            </header>
+            
+            <div class="btn-container">
+                <div class="btn red" id="red"></div>
+                <div class="btn yellow" id="yellow"></div>
+                <div class="btn green" id="green"></div>
+                <div class="btn purple" id="purple"></div>
+            </div>
+        </div>
+        
+        <div id="game-over-screen" class="screen">
+            <h1>GAME OVER</h1>
+            <div class="final-score">
+                <p>Your score: <span id="final-score">0</span></p>
+                <p>Best score: <span id="best-score-final">0</span></p>
+            </div>
+            <button id="restart-button">PLAY AGAIN</button>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
