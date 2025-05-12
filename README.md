@@ -1,4 +1,4 @@
-# Simon Says Game
+# EchoSync
 
 A modern implementation of the classic Simon Says memory game with a beautiful UI and smooth animations.
 
