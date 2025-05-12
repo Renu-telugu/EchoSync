@@ -2,8 +2,6 @@
 
 A modern implementation of the classic Simon Says memory game with a beautiful UI and smooth animations.
 
-![Simon Says Game]
-
 ## Features
 
 - **Beautiful Modern UI**: Sleek, dark-themed interface with gradient accents and smooth animations
@@ -39,25 +37,6 @@ cd simon-says-game
 ```
 
 Then open `index.html` in your browser.
-
-## Development
-
-Want to modify or enhance the game?
-
-1. Fork the repository
-2. Make your changes
-3. Open `index.html` to test
-4. Submit a pull request if you'd like to contribute!
-
-## License
-
-MIT License - Feel free to use, modify, and share!
-
-## Credits
-
-- Sound effects from [FreeCodeCamp](https://www.freecodecamp.org/) and [Mixkit](https://mixkit.co/)
-- Fonts from [Google Fonts](https://fonts.google.com/)
-- Inspired by the classic Simon electronic game from Milton Bradley
 
 ---
 
