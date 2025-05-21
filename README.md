@@ -32,8 +32,8 @@ A modern implementation of the classic Simon Says memory game with a beautiful U
 No installation required! Simply open the `index.html` file in your web browser to play.
 
 ```
-git clone https://github.com/yourusername/simon-says-game.git
-cd simon-says-game
+git clone https://github.com/yourusername/echosync.git
+cd echosync
 ```
 
 Then open `index.html` in your browser.
