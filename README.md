@@ -1,43 +1,43 @@
-# EchoSync
+# EchoSync 🎮
 
-A modern implementation of the classic Simon Says memory game with a beautiful UI and smooth animations.
-
-## Features
-
-- **Beautiful Modern UI**: Sleek, dark-themed interface with gradient accents and smooth animations
-- **Responsive Design**: Fully responsive layout that works on desktop and mobile devices
-- **Sound Effects**: Distinctive sounds for each button and game events
-- **Score Tracking**: Keeps track of your current level and best score
-- **Local Storage**: Saves your best score between game sessions
-- **Multiple Game Screens**: Welcome screen, game screen, and game over screen with smooth transitions
-
-## How to Play
-
-1. Click the "START GAME" button on the welcome screen
-2. Watch as the game shows a sequence of colored buttons
-3. Repeat the sequence by clicking the buttons in the same order
-4. For each successful sequence, the game adds one more step
-5. Try to reach the highest level possible!
-
-## Technologies Used
-
-- HTML5
-- CSS3 (Animations, Flexbox, Grid, Custom Properties)
-- JavaScript (ES6+)
-- Local Storage API
-- Web Audio API
-
-## Installation
-
-No installation required! Simply open the `index.html` file in your web browser to play.
-
-```
-git clone https://github.com/yourusername/echosync.git
-cd echosync
-```
-
-Then open `index.html` in your browser.
+EchoSync is a modern, sound-based memory game inspired by the classic "Simon Says." It challenges users to recall and repeat growing color sequences, blending a sleek UI with engaging audio-visual feedback.
 
 ---
 
-Enjoy the game and challenge your memory!
+## ✨ Features
+
+- Modern dark-themed UI with smooth animations and gradient accents
+- Fully responsive design for desktop and mobile devices
+- Sound effects for each button and game event using Web Audio API
+- Score tracking with current and best levels saved via Local Storage
+- Multiple game screens: Welcome, Game, and Game Over with clean transitions
+
+---
+
+## 🧠 How to Play
+
+1. Click "START GAME" on the welcome screen  
+2. Watch the flashing color sequence  
+3. Repeat the sequence by clicking the same buttons in order  
+4. Each successful round adds one more color to the sequence  
+5. Continue playing to achieve the highest possible score
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3 (Flexbox, Grid, Animations, Custom Properties)
+- JavaScript (ES6+)
+- Web Audio API
+- Local Storage API
+
+---
+
+## Run Locally
+
+Clone the repository and open the game in your browser.
+
+```bash
+git clone https://github.com/Renu-telugu/EchoSync.git
+cd EchoSync
